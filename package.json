@@ -17,6 +17,12 @@
     "grunt-contrib-watch": "~0.6.1",
     "grunt-execute": "~0.2.2",
     "express": "~4.13.1",
-    "path": "~0.12.7"
+    "path": "~0.12.7",
+    "passport": "~0.3.0",
+    "ejs": "~2.3.4",
+    "body-parser": "~1.14.1",
+    "jquery": "~2.1.4",
+    "jsdom": "~3.1.2",
+    "express-session": "~1.11.3"
   }
 }
