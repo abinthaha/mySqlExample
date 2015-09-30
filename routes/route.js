@@ -15,11 +15,9 @@ module.exports = function(app, passport) {
     app.use(session({secret:'somesecrettokenhere'}));
 
     app.get('/', function(request, response){
+        request.session.destroy();
         response.render('index.html');
     });
-
-
-    var sess;
 
     app.post('/', function (req, res) {
 
@@ -34,7 +32,7 @@ module.exports = function(app, passport) {
                 {
                     console.log('Successfull Login');
                     req.session.userName = userName;
-                    res.redirect('/home');
+                    res.render('home.html', {name : req.session.userName});
                 }
                 else {
                     console.log("Failed to Login");
@@ -47,11 +45,12 @@ module.exports = function(app, passport) {
     });
 
     app.get('/home', function(request, response){
-        // response.render('home.html');
-        if (request.session.userName) {
-            html = 'Welcome ' + request.session.userName;
-        }
-        response.send(html);
+
+        console.log(request.session);
+        // if (request.session.userName) {
+        //     response.render('home.html', {name : request.session.userName});
+        // }
+        // response.send(html);
     });
 
     app.get('/register', function(request, response){

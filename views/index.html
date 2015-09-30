@@ -3,36 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <title>Login Page</title>
+    <link rel="stylesheet" href="../css/styles.css" media="screen" title="no title" charset="utf-8">
+
+    <style media="screen">
+        body {
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.9);;
+            text-align: center;
+        }
+        .area input {
+            width: 60%;
+            height: 40px;
+            outline: none;
+            border-radius: 5px;
+            border: 1px solid #ffad60;
+            background-color: #ffe39f;
+            color: black;
+            margin: 5px;
+        }
+        .button input {
+            width: 10%;
+            height: 40px;
+            border: 1px solid #ffad60;
+            background-color: #ffe39f;
+            outline: none;
+            border-radius: 5px;
+            transition: all 0.2s linear;
+        }
+        .button input:hover {
+            cursor: pointer;
+            border: 1px solid #ffe39f;
+            background-color: #ffad60;
+        }
+        .button input:active {
+            cursor: pointer;
+            border: 1px solid #ffe39f;
+            background-color: #ffad60;
+        }
+    </style>
 </head>
 <body>
     <form class="" action="" method="post">
-        <table>
-            <tr>
-                <td>
-                    Username :
-                </td>
-                <td>
-                    <input type="text" name="uname" placeholder="Username">
-                </td>
-            </tr>
-            <tr>
-                <td>
-
-                    Password :
-                </td>
-                <td>
-                    <input type="password" name="pass" value="" placeholder="Password">
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <input type="submit" name="name" value="Login">
-                </td>
-                <td>
-                    <input type="button" name="name" value="Register" onclick="location.href= './register'">
-                </td>
-            </tr>
-        </table>
+        <div class="area">
+            <input type="text" name="uname" placeholder="Username">
+        </div>
+        <div class="area">
+            <input type="password" name="pass" value="" placeholder="Password">
+        </div>
+        <div class=" button">
+            <input type="submit" name="name" value="Login">
+            <input type="button" name="name" value="Register" onclick="location.href= './register'">
+        </div>
     </form>
 </body>
 </html>
