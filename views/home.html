@@ -1,19 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="GmailApp">
 <head>
     <meta charset="UTF-8">
-    <title>Home page</title>
-    <script>
-        // var someData = !{data};
-        console.log('Hello : ');
-    </script>
+    <title>Gmail</title>
+
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <script src="assets/plugin/jquery.js" charset="utf-8"></script>
+    <script src="assets/plugin/angular.min.js" charset="utf-8"></script>
+    <script src="assets/plugin/angular-route.min.js" charset="utf-8"></script>
+    <script src="assets/plugin/angular-ui-router.min.js" charset="utf-8"></script>
+    <script src="assets/plugin/underscore.js" charset="utf-8"></script>
+    <script src="app/scripts/module.js" charset="utf-8"></script>
+    <script src="app/scripts/route.js" charset="utf-8"></script>
+    <script src="app/controller/homeController.js" charset="utf-8"></script>
+    <script src="app/controller/inboxController.js" charset="utf-8"></script>
+    <script src="app/controller/draftController.js" charset="utf-8"></script>
+    <script src="app/controller/importantController.js" charset="utf-8"></script>
+    <script src="app/controller/sentController.js" charset="utf-8"></script>
+    <script src="app/controller/starredController.js" charset="utf-8"></script>
+    <script src="app/services/service.js" charset="utf-8"></script>
 </head>
-<body>
-    <h2>
-        Welcome <%= name%> to Home page
-    </h2>
-    <div class="">
-        <a href="/">Logout</a>
+    <body background="assets/images/bg.jpg"  ng-controller="homeController">
+        <header>
+            <img src="assets/images/logo.png" alt="" height="60px"/>
+            <input type="text" name="name" value="">
+            <div class="search_button">
+                <img src="assets/images/search.png" alt="" width="20px"/>
+            </div>
+    </header>
+    
+    <div class="tools_menu">
+        <h4>Mail</h4>
+        <div class="tool_button">
+            <input type="checkbox">
+        </div>
+        <div class="tool_button">
+            <img src="assets/images/refresh.png" alt="" />
+        </div>
+        <div class="tool_button">
+            More
+        </div>
+    </div>
+    <div class="side_menu">
+        <ul>
+            <div class="btn-compose">
+                <b>COMPOSE</b>
+            </div>
+            <li ui-sref="inbox"><a>Inbox</a></li>
+            <li ui-sref="starred"><a>Starred</a></li>
+            <li ui-sref="important"><a>Important</a></li>
+            <li ui-sref="sent_mail"><a>Sent Mail</a></li>
+            <li ui-sref="drafts"><a>Drafts</a></li>
+            <li>More</li>
+        </ul>
+    </div>
+    <div class="content_area">
+        <div ui-view></div>
+            <!-- Contents will be injected here -->
+
     </div>
 </body>
 </html>

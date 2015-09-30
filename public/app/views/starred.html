@@ -1,0 +1,18 @@
+<div class="itemsDiv">
+    <ul>
+        <li ng-repeat="starred in starredItems">
+            <input type="checkbox" name="name" value="">
+            <i class="fa fa-star-o impt_{{starred.starred}}" ng-click="toggleStar($index)"></i>
+
+            <div class="senter">
+                {{starred.from}}
+            </div>
+            <div class="message">
+                {{starred.subjuct}}
+            </div>
+            <div class="time">
+                {{starred.time}}
+            </div>
+        </li>
+    </ul>
+</div>

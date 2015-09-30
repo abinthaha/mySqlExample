@@ -8,6 +8,7 @@ var passport = require('passport');
 var PORT = 8080;
 
 var app = express();
+app.use(express.static('public'));
 
 require('./routes/route')(app, passport);
 app.set('views',__dirname + '/views');

@@ -1,0 +1,18 @@
+<div class="itemsDiv">
+    <ul>
+        <li ng-repeat="draft in draftItems">
+            <input type="checkbox" name="name" value="">
+            <i class="fa fa-star-o impt_{{draft.starred}}" ng-click="toggleStar($index)"></i>
+
+            <div class="senter">
+                {{draft.to}}
+            </div>
+            <div class="message">
+                {{draft.subjuct}}
+            </div>
+            <div class="time">
+                {{draft.time}}
+            </div>
+        </li>
+    </ul>
+</div>

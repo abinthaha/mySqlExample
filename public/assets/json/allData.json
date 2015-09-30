@@ -1,0 +1,82 @@
+{
+    "Received": [
+        {
+            "starred": false,
+            "important": false,
+            "from": "Saju Devasia",
+            "subjuct": "Dosa Mela - For circulation",
+            "message": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "time": "10:52 am"
+        },
+        {
+            "starred": true,
+            "important": false,
+            "from": "Anu Sekhar",
+            "subjuct": "Biriyani Mela - For circulation",
+            "message": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "time": "10:00 am"
+        },
+        {
+            "starred": false,
+            "important": true,
+            "from": "Syam SP",
+            "subjuct": "Invitation",
+            "message": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "time": "Sep 22"
+        },
+        {
+            "starred": true,
+            "important": true,
+            "from": "Vijay Dev",
+            "subjuct": "AutoCart code",
+            "message": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "time": "Sep 15"
+        }
+    ],
+    "sent_items": [
+        {
+            "starred": "false",
+            "important": "false",
+            "to": "Vijay Dev",
+            "subjuct": "Dosa Mela - For circulation",
+            "time": "10:52 am"
+        },
+        {
+            "starred": "true",
+            "important": "false",
+            "to": "Nishin",
+            "subjuct": "Dosa Mela - For circulation",
+            "time": "10:52 am"
+        },
+        {
+            "starred": "false",
+            "important": "true",
+            "to": "Saju Devasia",
+            "subjuct": "Dosa Mela - For circulation",
+            "time": "10:52 am"
+        },
+        {
+            "starred": "true",
+            "important": "true",
+            "to": "Syam S Pillai",
+            "subjuct": "Dosa Mela - For circulation",
+            "time": "10:52 am"
+        }
+    ],
+    "drafts": [
+        {
+            "starred": "false",
+            "important": "false",
+            "to": "Vijay",
+            "subjuct": "Dosa Mela - For circulation",
+            "time": "10:52 am"
+        },
+        {
+            "starred": "true",
+            "important": "false",
+            "to": "Nishin",
+            "subjuct": "Dosa Mela - For circulation",
+            "time": "10:52 am"
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+<div class="itemsDiv">
+    <ul>
+        <li ng-repeat="important in importantItems">
+            <input type="checkbox" name="name" value="">
+            <i class="fa fa-star-o impt_{{important.starred}}" ng-model="inbox.starred"></i>
+
+            <div class="senter">
+                {{important.from}}
+            </div>
+            <div class="message">
+                {{important.subjuct}}
+            </div>
+            <div class="time">
+                {{important.time}}
+            </div>
+        </li>
+    </ul>
+</div>
