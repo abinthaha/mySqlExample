@@ -24,6 +24,40 @@ header {
         padding: 5px;
         background-color: #4387fd;
     }
+    .name {
+        display: inline-block;
+        width: 200px;
+        height: 30px;
+        margin-left: 50px;
+        margin-top: 20px;
+        background-color: rgba(0, 0, 0, 0.8);
+        border-radius: 5px;
+        line-height: 2;
+        text-align: center;
+        color: white;
+    }
+    .logout {
+        display: inline-block;
+        width: 100px;
+        float: right;
+        right: 20px;
+        margin-top: 20px;
+        background-color: rgba(0, 0, 0, 0.8);
+        border: 1px solid white;
+        border-radius: 5px;
+        height: 30px;
+        line-height: 2;
+        text-align: center;
+
+        &:hover {
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+
+        a{
+            color: white;
+            text-decoration: none;
+        }
+    }
 }
 .tools_menu {
     border-bottom: 1px solid grey;

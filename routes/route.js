@@ -19,14 +19,20 @@ module.exports = function(app, passport) {
         response.render('index.html');
     });
 
+    app.get('/logout', function(request, response){
+        response.redirect('/');
+    });
+
+    app.get('/home/inbox', function(request, response){
+        console.log(request.session);
+    });
+
     app.post('/', function (req, res) {
 
         var userName = req.body.uname;
             passWord = req.body.pass;
 
-        var html;
-
-        sql.connection.query('SELECT * from USER WHERE name = "'+userName+'" AND password = "'+passWord+'"', function(err, rows, fields) {
+        sql.connection.query('SELECT * from users WHERE email = "'+userName+'" AND password = "'+passWord+'"', function(err, rows, fields) {
             if (!err){
                 if(rows.length > 0)
                 {
@@ -42,15 +48,6 @@ module.exports = function(app, passport) {
             else
                 console.log('Error while performing Query.');
             });
-    });
-
-    app.get('/home', function(request, response){
-
-        console.log(request.session);
-        // if (request.session.userName) {
-        //     response.render('home.html', {name : request.session.userName});
-        // }
-        // response.send(html);
     });
 
     app.get('/register', function(request, response){
